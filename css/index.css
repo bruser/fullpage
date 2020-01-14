@@ -1,0 +1,47 @@
+.header {
+  width:10rem;
+  height: 1.173rem;
+  background:rgba(34,33,33,1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.227rem 0.4rem 0.347rem;
+}
+.header a {
+  width: 5.053rem;
+  height: 0.6rem;
+  display: inline-block;
+  background: url('../image/logo@2x.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+.navbox {
+  width: 0.587rem;
+  height: 0.427rem;
+  background: url('../image/menu@2x.png') no-repeat center center;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+.swiper-container {
+  width: 100%;
+  /* height: 100%; */
+  height: calc(100% - 1.173rem);
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}

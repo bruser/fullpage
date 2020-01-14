@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 12px ;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+[data-dpr="1"] div {
+  font-size: 14px; 
+}
+[data-dpr="2"] div {
+  font-size: 28px;
+}
+[data-dpr="3"] div {
+  font-size: 42px;
+}
