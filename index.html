@@ -14,34 +14,62 @@
     <a class="logo"></a>
     <div class="navbox"></div>
   </div>
-  <div class="swiper-container">
+  <div class="swiper-container home-content">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-      <div class="swiper-slide">Slide 10</div>
+      <div class="swiper-slide home-box">
+        <div class="hometextbox textanimation transitiontime">
+          <p class="hometext">从一次惊喜</p>
+          <p class="hometext">到每次陪伴</p>
+        </div>
+        <div class="homeline"></div>
+        <p class="hometexts textanimation transitiontime2">From a surprise to constant companion</p>
+        <div class="homemouse"><p></p></div>
+      </div>
+      <div class="swiper-container1 swiper-slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
   </div>
+  <div class="navbar flexC jsbt fs30">
+    <div class="textTop">
+      <p class="texttop1">关于我们 About us</p>
+      <p class="texttop2">加入我们 Join us</p>
+    </div>
+    <p class="textBottom"><i></i> 400-9200-713</p>
+  </div>
+  <div class="meng"></div>
 </body>
-<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
-<script src="./public/js/jquery-1.11.3.min.js"></script>
+
+<script src="./public/js/flexible.js"></script>
+<SCript src="./public/js/jquery-1.11.3.min.js"></SCript>
 <script src="./public/js/swiper.min.js"></script>
+<script src="./public/js/animate.js"></script>
 
 <script>
-    var swiper = new Swiper('.swiper-container', {
+  $(function(){
+
+    let swiper1 = new Swiper('.swiper-container', {// 首页滚动
+      direction: 'vertical',
+      pagination: {
+        // el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    let swiper2 = new Swiper('.swiper-container1', {// 第二页
       direction: 'vertical',
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
     });
+  })
+
 </script>
 </html>
