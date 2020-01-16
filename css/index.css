@@ -87,41 +87,46 @@
   opacity: 0.6;
   margin-top: 0.253rem;
 }
+
 .homemouse {
   width: 0.4rem;
   height: 0.587rem;
   /* background:rgba(255,255,255,1); */
   border-radius: 0.107rem;
-  border: 1px solid rgba(255,255,255,1);
+  border: 1px solid rgba(255, 255, 255, 1);
   margin-top: 6.973rem;
   display: flex;
   justify-content: center;
   padding-top: 0.187rem;
 
 }
+
 .homemouse p {
   width: 0.027rem;
   height: 0.107rem;
-  background:rgba(255,255,255,1);
+  background: rgba(255, 255, 255, 1);
 }
+
 .navbar {
   position: absolute;
   top: 1.173rem;
   right: -100%;
   width: 5.2rem;
   height: 16.613rem;
-  background:rgba(34,33,33,1);
-  opacity:0.97;
+  background: rgba(34, 33, 33, 1);
+  opacity: 0.97;
   z-index: 100;
   transition: all 0.5s;
-  color:rgba(151,151,151,1);
+  color: rgba(151, 151, 151, 1);
   line-height: 0.24rem;
 }
+
 .texttop1 {
   height: 1.84rem;
   line-height: 1.84rem;
   padding-left: 0.4rem;
 }
+
 .texttop2 {
   height: 13.0133rem;
   padding-top: 0.5067rem;
@@ -129,8 +134,74 @@
   border-bottom: 1px solid #a4a4a4;
   padding-left: 0.4rem;
 }
+
 .textBottom {
   height: 1.76rem;
   line-height: 1.76rem;
   padding-left: 0.4rem;
+}
+
+.swiper-slide-common  {
+  background: url('../image/bg1@2x.png') no-repeat center center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page1-toptext {
+  display: flex;
+  padding-top: 1.3333rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.page1-number {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.86;
+}
+
+.page-text2 {
+  font-size: 0.96rem;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.86;
+}
+
+.page1-jia {
+  width: 0.3467rem;
+  height: 0.3467rem;
+  position: relative;
+  margin: 0 0.1867rem;
+  margin-top: 0.5867rem;
+}
+.page1-jia::before {
+  position: absolute;
+  top:  calc(50% - 0.0333rem);
+  left: 0;
+  width: 0.3467rem;
+  height: 0.0667rem;
+  background: rgba(217, 26, 26, 1);
+  content: '';
+}
+.page1-jia::after {
+  position: absolute;
+  top:  0;
+  left: calc(50% - 0.0333rem);
+  height: 0.3467rem;
+  width:  0.0667rem;
+  background: rgba(217, 26, 26, 1);
+  content: '';
+}
+.page1-text3 {
+font-size:0.3467rem;
+color:rgba(255,255,255,1);
+line-height:0.64rem;
+margin-top: 0.4rem;
+}
+.page1-img {
+  width: 7.7333rem;
+  height: 10.7333rem;
+  position: absolute;
+  bottom: 0;
 }
