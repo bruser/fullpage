@@ -15,6 +15,7 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 p {
@@ -35,15 +36,15 @@ p {
 }
 
 .transitiontime {
-  transition: all 1s;
+  /* transition: all 1s; */
 }
 
 .transitiontime2 {
-  transition: all 1.2s;
+  /* transition: all 1.2s; */
 }
 
 .textanimation {
-  transform: translateY(10rem);
+  /* transform: translateY(10rem); */
 }
 
 .flexR {
@@ -83,15 +84,54 @@ p {
   opacity: 0.2;
   display: none;
 }
+
 .swiper-pagination-bullet {
   width: 0.1867rem;
   height: 0.1867rem;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 :root {
   --swiper-theme-color: none;
 }
+
 .swiper-pagination-bullet-active {
   border: 1px solid rgba(255, 255, 255, 1);
 }
+
+.swiper-slide .textanimation1 {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: all .6s;
+}
+.swiper-slide .textanimation2 {
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: all .6s;
+}
+
+.page1-img {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all .6s;
+}
+
+.ani-slide .textanimation1,.ani-slide .page1-img {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.ani-slide2 .textanimation2 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.ani-slide2 .page1-img {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+

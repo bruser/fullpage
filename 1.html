@@ -1,0 +1,47 @@
+ <!-- Swiper -->
+ <div class="swiper-container" id="swiper-container1">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">Slide 1</div>
+
+    <div class="swiper-slide">
+        <div class="swiper-container" id="swiper-container2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">                
+              <h4>一段很长的内容</h4>
+              <p style="opacity:0.99;">一<br>段<br>很<br>长<br>的<br>内<br>容</p>
+              <p style="opacity:0.98;">一<br>段<br>很<br>长<br>的<br>内<br>容</p>
+              <p style="opacity:0.97;">一<br>段<br>很<br>长<br>的<br>内<br>容</p>
+             </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">Slide 3</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+
+let swiper1 = new Swiper('#swiper-container1', {// 首页滚动
+  direction: 'vertical',
+  pagination: {
+    clickable: true,
+  },
+});
+
+let swiper4 = new Swiper('#swiper-container2', {// 第二页
+  direction: 'vertical',
+  nested: true,
+  //resistanceRatio: 0,
+  slidesPerView: 'auto',
+  freeMode: true,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+<div class="header">
+  <a class="logo"></a>
+  <div class="navbox"></div>
+</div>

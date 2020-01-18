@@ -1,10 +1,10 @@
 
 $(function(){
-  let animate = (dom, time) => {
-    dom.css('transform','translateY(0)')
-  }
+  // let animate = (dom, time) => {
+  //   dom.css('transform','translateY(0)')
+  // }
   
-  $('.textanimation').css('transform','translateY(0)'); // 文字效果
+  // $('.textanimation').css('transform','translateY(0)'); // 文字效果
   // $('.textanimation').animate({'transform':'translateY(0)'}) // 文字效果
 
   $('.navbox').on('click',function(){ // 导航栏切换
