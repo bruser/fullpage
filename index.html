@@ -7,6 +7,7 @@
     content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./public/css/swiper.min.css">
+  <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/index.css">
   <title>Document</title>
@@ -22,12 +23,12 @@
     <div class="swiper-wrapper">
       <!-- 1 -->
       <div class="swiper-slide home-box">
-        <div class="hometextbox  ">
+        <div class="hometextbox">
           <p class="hometext textanimation1">从一次惊喜</p>
           <p class="hometext textanimation1">到每次陪伴</p>
         </div>
         <div class="homeline"></div>
-        <p class="hometexts textanimation1 ">From a surprise to constant companion</p>
+        <p class="hometexts">From a surprise to constant companion</p>
         <div class="homemouse">
           <p></p>
         </div>
@@ -279,12 +280,16 @@
         init: function (swiper) {
           slide = this.slides.eq(0);
           slide.addClass('ani-slide');
+          // slide.find('.up').addClass('fadeInDown'); //ani-slide
+          //   slide.find('.down').addClass('fadeInUp'); //ani-slide
         },
         transitionStart: function () {
           current = 1;
           for (i = 0; i < this.slides.length; i++) {
             slide = this.slides.eq(i);
             slide.removeClass('ani-slide');
+            // slide.find('.up').addClass('fadeInDown'); //ani-slide
+            // slide.find('.down').addClass('fadeInUp'); //ani-slide
           }
           if(this.activeIndex == 2) {
             numbertext.html(1+'0000+')
