@@ -100,22 +100,38 @@ p {
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
+.swiper-slide .textanimation3 {
+  opacity: 0;
+  transition: transform 1s,opacity 1.6s;
+  transform: translateY(200px);
+}
+
+.swiper-slide .textanimation4 {
+  opacity: 0;
+  transition: transform 1s,opacity 1.6s;
+  transform: translateY(50px);
+}
+
+.ani-slide .textanimation3 ,.ani-slide .textanimation4{
+  transform: translateY(0);
+  opacity: 1;
+}
 
 .swiper-slide .textanimation1 {
   transform: translateY(-50px);
   opacity: 0;
-  transition: all .6s;
+  transition: all 1s ;
 }
 .swiper-slide .textanimation2 {
   transform: translateY(-50px);
   opacity: 0;
-  transition: all .6s;
+  transition: all 1s;
 }
 
 .page1-img {
   transform: translateY(50px);
   opacity: 0;
-  transition: all .6s;
+  transition: all 1s;
 }
 
 .ani-slide .textanimation1,.ani-slide .page1-img {
