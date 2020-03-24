@@ -383,8 +383,9 @@
 }
 
 .lasttopbox {
-  padding-top: 1.5867rem;
-  height: 16.0933rem;
+  /* padding-top: 1.5867rem; */
+  padding-top: 1.2rem;
+  /* height: 16.0933rem; */
   background-image: url('../image/last@2x.png');
 }
 
@@ -415,8 +416,9 @@ color:rgba(255,255,255,1);
   color: #fff;
 }
 .lastbobox {
-height:7.0133rem;
-background:rgba(34,33,33,1);
+  height:7.0133rem;
+  background:rgba(34,33,33,1);
+  padding-top: 0.1333rem;
 }
 .lastbobox .logo1 {
   width: 3.16rem;
@@ -433,12 +435,14 @@ background:rgba(34,33,33,1);
   color:rgba(255,255,255,1);
   line-height:0.24rem;
   opacity:0.55;
-  margin-top: 0.1333rem;
+  margin-top: 0.4rem;
+}
+.telib {
+  margin-right: 0.2rem;
 }
 .telbox {
-  margin-top: 0.6rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .telbox i {
   display: inline-block;
@@ -454,8 +458,8 @@ background:rgba(34,33,33,1);
 }
 .telbox span {
   font-size:0.32rem;
-line-height:0.24rem;
-opacity:0.5;
+  line-height:0.24rem;
+  opacity:0.5;
 }
 .emaili {
   width: 0.24rem;
@@ -465,10 +469,12 @@ opacity:0.5;
 .telbox p {
   display: flex;
   align-items: center;
+  height: 0.4rem;
 }
 .lasttext3 {
-  font-size: 0.1867rem;
+  font-size: 0.1067rem;
   color:rgba(255,255,255,1);
   opacity:0.4;
-  margin-top: 0.2667rem;
+  line-height: 0.42rem;
+  /* text-align: left; */
 }

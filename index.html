@@ -21,6 +21,7 @@
   <!-- Swiper -->
   <div class="swiper-container" id="swiper-container1">
     <div class="swiper-wrapper">
+  
       <!-- 1 -->
       <div class="swiper-slide home-box">
         <div class="hometextbox textanimation3">
@@ -221,22 +222,28 @@
                 </div>
               </div>
               <div class="lastbobox">
-                <div>
+                <!-- <div>
                   <img class="logo1" src="./image/logo1@2x.png" alt="">
-                </div>
-                <div>
+                </div> -->
+                <!-- <div>
                   <img class="last2wei" src="./image/last2wei@2x.png" alt="">
                 </div>
-                <p class="weima2">美华保险服务微信公众号</p>
+                <p class="weima2">美华保险服务微信公众号</p> -->
                 <div class="telbox">
-                  <p><i class="teli"></i><span>400-9200-713</span></p>
+                  <p class="telib"><i class="teli"></i><span>400-9200-713</span></p>
                   <p><i class="emaili"></i><span>customer_service@un29.com</span></p>
                 </div>
+                <!-- ，<br />未经许可不得复制、转载或摘编，违者必究！ -->
                 <div class="lasttext3">
-                  <p>版权所有 © 美华保险销售有限公司，<br />未经许可不得复制、转载或摘编，违者必究！</p>
+                  <p>版权所有 © 美华保险销售有限公司</p>
                   <!-- <p>
                     <span>沪公安网备: 31011202006785号  备案证书号: 沪ICP备17036366号-2 互联网保险信息披露</span>
                   </p> -->
+                  <p>
+                    <span>沪公安备案：31011202006785</span>
+                    <span>备案证书号：沪ICP备17036366号-2</span>
+                    <span>互联网保险信息披露</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -378,15 +385,15 @@
         },
       }
     });
-    let swiper4 = new Swiper('#swiper-container2', {// 第4页
-      direction: 'vertical',
-      nested: true,
-      slidesPerView: 'auto',
-      freeMode: true,
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-    });
+    // let swiper4 = new Swiper('#swiper-container2', {// 第4页
+    //   direction: 'vertical',
+    //   nested: true,
+    //   slidesPerView: 'auto',
+    //   freeMode: true,
+    //   scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //   },
+    // });
 
     $('.texttop1').on('click',function(){
       swiper1.slideTo(3);
