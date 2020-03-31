@@ -25,6 +25,15 @@
   cursor: pointer;
 }
 
+.navclose {
+  width: 0.587rem;
+  height: 0.5rem;
+  background: url('../image/close.png') no-repeat center center;
+  background-size: 100% 100%;
+  cursor: pointer;
+  display: none;
+}
+
 #swiper-container1 {
   width: 100%;
   /* height: 100%; */
@@ -73,6 +82,8 @@
   font-family: Microsoft YaHei;
   color: rgba(255, 255, 255, 1);
   opacity: 0.86;
+  /* opacity: 0; */
+  visibility: hidden;
 }
 
 .homeline {
@@ -91,6 +102,7 @@
   line-height: 0.773;
   opacity: 0.6;
   margin-top: 0.253rem;
+  visibility: hidden;
 }
 
 .homemouse {
@@ -120,7 +132,7 @@
   /* height: 16.613rem; */
   height: calc(100vh - 1.173rem);
   background: rgba(34, 33, 33, 1);
-  opacity: 0.97;
+  opacity: 0.8;
   z-index: 300;
   transition: all 0.5s;
   color: rgba(151, 151, 151, 1);

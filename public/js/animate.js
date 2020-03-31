@@ -12,14 +12,20 @@ $(function(){
     if(right == '0px') {
       $('.meng').hide();
       $('.navbar').css('right','-100%');
+      $('.navbox').show();
+      $('.navclose').hide();
     } else {
       $('.navbar').css('right','0');
       $('.meng').show();
+      $('.navbox').hide();
+      $('.navclose').show();
     }
   })
   $('.meng').on('click',function(){
     $('.meng').hide();
     $('.navbar').css('right','-100%');
+    $('.navbox').show();
+    $('.navclose').hide();
   })
 
 })
