@@ -107,27 +107,24 @@
 }
 
 .homemouse {
-  width: 0.4rem;
-  height: 0.587rem;
+  /* width: 0.4rem; */
+  /* height: 0.587rem; */
   /* background:rgba(255,255,255,1); */
-  border-radius: 0.107rem;
-  border: 1px solid rgba(255, 255, 255, 1);
-  margin-top: 6.973rem;
-  display: flex;
-  justify-content: center;
+  /* border-radius: 0.107rem;
+  border: 1px solid rgba(255, 255, 255, 1); */
+  /* margin-top: 6.973rem; */
+
   /* padding-top: 0.187rem; */
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   margin: 1rem auto;  
-
+  animation: ameihua-index-mouse infinite 0.8s ease-in 0s;
 }
 
-.homemouse p {
-  width: 0.027rem;
-  height: 0.107rem;
-  background: rgba(255, 255, 255, 1);
+.homemouse img {
+  width: 0.4rem;
 }
 
 .navbar {
