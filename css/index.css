@@ -181,7 +181,12 @@
   background-size: 100% 100%;
   margin-right: 0.16rem;
 }
-
+.text-box-com {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+}
 .swiper-slide-common {
   background-size: 100% 100%;
   display: flex;
@@ -189,11 +194,11 @@
   align-items: center;
   background-repeat: no-repeat;
   background-position: center center;
+  justify-content: space-between;
 }
 
 .page1-toptext {
   display: flex;
-  padding-top: 1.5rem;
   text-align: center;
   justify-content: center;
 }
@@ -242,13 +247,11 @@
   font-size: 0.3467rem;
   color: rgba(255, 255, 255, 1);
   line-height: 0.64rem;
-  margin-top: 0.4rem;
+  margin-top: 6%;
 }
 
 .page1-img {
   width: 6.7333rem;
-  position: absolute;
-  bottom: 0;
 }
 
 .page2-circle {
@@ -309,13 +312,13 @@
 
 .join-us {
   background-image: url('../image/join@2x.png');
+  padding-top: 10%;
 }
 
 .joinus-text {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 1);
   line-height: 1.1467rem;
-  margin-top: 1.6rem;
 }
 
 .joinus-imgbox {
@@ -344,56 +347,56 @@
 }
 
 .page5-box {
-  padding-top: 1.6rem;
   background-image: url('../image/page4@2x.png');
+  padding-top: 10%;
+}
+.page5-box > div {
+
 }
 
 .page5-text1 {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 1);
   line-height: 1.1467rem;
+  margin-bottom: 10%;
 }
 
 .map {
   width: 7.08rem;
-  margin-top: 1.6rem;
 }
 
 .page5-text2 {
   font-size: 0.48rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
-  position: absolute;
-  bottom: 3.2267rem;
+  /* position: absolute; */
+  /* bottom: 3.2267rem; */
+  margin-top: 7%;
 }
 
 .swiper-container2 .swiper-pagination {
-  bottom: 1.7333rem;
+  /* bottom: 1.7333rem; */
+  bottom: 6%;
 }
 
 .zhizhao {
   width: 5.6667rem;
-  margin-top: 1rem;
 }
 
 .beian {
   width: 7.6133rem;
-  margin-top: 1.4933rem;
 }
 
 .jy {
   width: 5.6667rem;
-  margin-top: 1rem;
 }
 
 .danwei {
   width: 7rem;
-  margin-top: 2rem;
 }
 
 .lianmeng {
   width: 4.56rem;
-  margin-top: 1.3333rem;
 }
 
 
@@ -405,7 +408,7 @@ padding-bottom: 0.3rem;
 }
 
 .lastimgbox {
-  margin-bottom: 0.7467rem;
+  /* margin-bottom: 0.7467rem; */
 }
 
 
@@ -420,18 +423,17 @@ padding-bottom: 0.3rem;
   flex-direction: column;
 }
 .lasttopbox {
-  flex: 1;
   padding-top: 1rem;
   background-image: url('../image/last@2x.png');
   display: flex;
   flex-direction: column;
-
 }
 .lastimgbox-box {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding-top: 0.7467rem;
+  justify-content: space-around;
+  /* padding-top: 0.7467rem; */
 }
 .lastimgbox img {
   width: 1.8rem;
@@ -440,14 +442,17 @@ padding-bottom: 0.3rem;
   font-size:0.3467rem;
   color:rgba(255,255,255,1);
 }
+.lasttopboxbox {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .lastbobox {
   height: 2rem;
   background:rgba(33,33,33,0.5);
-  padding-top: 0.1333rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
+  padding-top:0.2rem;
 }
 .lastbobox .logo1 {
   width: 3.16rem;
