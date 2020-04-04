@@ -91,17 +91,16 @@ p {
 .swiper-pagination-bullet {
   /* width: 0.1867rem;
   height: 0.1867rem; */
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 
 :root {
   --swiper-theme-color: none;
 }
 
-.swiper-pagination-bullet-active {
+/* .swiper-pagination-bullet-active {
   border: 1px solid rgba(255, 255, 255, 1);
-}
+} */
 
 .swiper-slide .textanimation3 {
   opacity: 0;
