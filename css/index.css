@@ -26,11 +26,7 @@
 }
 
 .navclose {
-  width: 0.587rem;
-  height: 0.5rem;
-  background: url('../image/close.png') no-repeat center center;
-  background-size: 100% 100%;
-  cursor: pointer;
+  width: 0.5rem;
   display: none;
 }
 
