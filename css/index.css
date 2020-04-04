@@ -173,12 +173,10 @@
   border-top: 1px solid rgba(255,255,255,0.2);
 
 }
-.textBottom i {
+.textBottom img {
   display: inline-block;
   width: 0.3467rem;
   height: 0.4533rem;
-  background:url('../image/tel@2x.png') no-repeat center center ;
-  background-size: 100% 100%;
   margin-right: 0.16rem;
 }
 .text-box-com {
