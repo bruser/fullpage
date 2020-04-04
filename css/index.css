@@ -66,7 +66,6 @@
 
 .home-box {
   background: url('../image/bg@2x.jpg') no-repeat center center;
-  background: url('../image/bg@2x.png') no-repeat center center;
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
@@ -248,7 +247,6 @@
 
 .page1-img {
   width: 6.7333rem;
-  height: 60%;
   position: absolute;
   bottom: 0;
 }
@@ -294,15 +292,15 @@
 }
 
 .swiper-slide-page1 {
-  background-image: url('../image/bg1@2x.png');
+  background-image: url('../image/bg1@2x.jpg');
 }
 
 .swiper-slide-page2 {
-  background-image: url('../image/bg2@2x.png');
+  background-image: url('../image/bg2@2x.jpg');
 }
 
 .swiper-slide-page3 {
-  background-image: url('../image/bg3@2x.png');
+  background-image: url('../image/bg3@2x.jpg');
 }
 
 .swiper-slide-page4 {
