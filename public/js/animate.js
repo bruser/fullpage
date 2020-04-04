@@ -21,11 +21,19 @@ $(function(){
       $('.navclose').show();
     }
   })
-  $('.meng').on('click',function(){
+  $('.meng').on('click',function(e){
     $('.meng').hide();
     $('.navbar').css('right','-100%');
     $('.navbox').show();
     $('.navclose').hide();
   })
 
+  $('.meng').on('touchmove',function(e){
+          e.preventDefault()
+      e.stopPropagation()
+  })
+  $('.navbar').on('touchmove',function(e){
+    e.preventDefault()
+e.stopPropagation()
+})
 })
