@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="stylesheet" href="./public/css/swiper.min.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>美华保险</title>
+</head>
+
+<body>
+  <div class="header">
+    <a href="./" class="logo"></a>
+    <div class="navbox">
+    </div>
+      <img class="navclose" src="./image/close.png" alt="">
+  </div>
+  <!-- Swiper -->
+  <div class="swiper-container" id="swiper-container1">
+  <div class="meng"></div>
+    <div class="swiper-wrapper">
+
+      <!-- 1 -->
+      <div class="swiper-slide home-box">
+        <div class="hometextbox textanimation3">
+          <p class="hometext">从一次惊喜</p>
+          <p class="hometext">到每次陪伴</p>
+        </div>
+        <!-- <div class="homeline"></div> -->
+        <p class="hometexts textanimation4">From a surprise to constant companion</p>
+        <div class="homemouse">
+          <img src="./image/mouse@2x.png" alt="">
+        </div>
+      </div>
+      <!--2  -->
+      <div class="swiper-slide ">
+        <div class="swiper-container1 swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-common swiper-slide-page1">
+              <div class="text-box-com">
+                <div class="page1-toptext">
+                  <p class="page1-number textanimation1">1000</p>
+                  <p class="page1-jia textanimation1"></p>
+                  <p class="page-text2 textanimation1">保险产品</p>
+                </div>
+                <div class="page1-text3">
+                  <p class="textanimation1">
+                    合作众多保险公司，提供上千款保险产品，根据您<br />
+                    的个性化需求，通过IPM“6+1”严选循环体系，<br />
+                    为您甄选定制高性价比的家庭保障解决方案。
+                  </p>
+                </div>
+              </div>
+              <img class="page1-img" src="./image/page1mobile@2x.png" alt="">
+            </div>
+            <div class="swiper-slide swiper-slide-common swiper-slide-page2">
+              <div class="text-box-com">
+                <div class="page1-toptext">
+                  <p class="page1-number textanimation2">360</p>
+                  <p class="page2-circle textanimation2"></p>
+                  <p class="page-text2 textanimation2">风险管理</p>
+                </div>
+                <div class="page1-text3">
+                  <p class="textanimation2">
+                    实时掌握家庭保障情况，精准分析财富缺口从而不<br />
+                    断优化完善保障体系，未来理赔服务可基于精准的<br />
+                    保障体系分析从而顺利实现对接。
+                  </p>
+                </div>
+              </div>
+              <img class="page1-img" src="./image/page2mobile@2x.png" alt="">
+            </div>
+            <div class="swiper-slide swiper-slide-common swiper-slide-page3">
+              <div class="text-box-com">
+                <div class="page1-toptext">
+                  <p class="page1-number textanimation2">1</p>
+                  <p class="page3-v textanimation2">V</p>
+                  <p class="page1-number textanimation2">1</p>
+                  <p class="page-text2 textanimation2">&nbsp;专人陪同</p>
+                </div>
+                <div class="page1-text3">
+                  <p class="textanimation2">
+                    行业首创“预理赔”机制，利用团队的力量、公司<br />
+                    的资源，对接保险公司绿色理赔通道，一对一全程<br />
+                    督办，更有国际知名律师团队保驾护航。
+                  </p>
+                </div>
+              </div>
+             
+              <img class="page1-img" src="./image/page3mobile@2x.png" alt="">
+            </div>
+            <div class="swiper-slide swiper-slide-common swiper-slide-page4">
+              <div>
+                <img class="page4-img img4" src="./image/page4mobile@2x.png" alt="">
+                <p class="page4-text4 ">
+                  美华保险服务<br />
+                  1元掌握全国产品对比！
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="navbar flexC jsbt fs30">
+      <div class="textTop">
+        <p class="texttop1">关于我们 About us</p>
+        <p class="texttop2">加入我们 Join us</p>
+      </div>
+      <p class="textBottom">
+        <img src="./image/tel@2x.png" alt="">
+         400-9200-713
+        </p>
+    </div>
+  </div>
+
+</body>
+
+<script src="./public/js/flexible.js"></script>
+<SCript src="./public/js/jquery-1.11.3.min.js"></SCript>
+<script src="./public/js/swiper.min.js"></script>
+<script src="./public/js/animate.js"></script>
+
+<script>
+  $(function () {
+    let swiper2dom = $('#swiper-container1').children().children().eq(1);
+    let swiper4dom = $('#swiper-container1').children().children().eq(3);
+    let slide2_1 = $('.swiper-container1').children().children().eq(0);
+    let numbertext = $('.numbertext');
+    let timeout1 = null;
+    let current = 0; //当前在第几个swiper
+    let swiper1 = new Swiper('#swiper-container1', {// 首页滚动
+      direction: 'vertical',
+      speed: 800,
+      followFinger: false,
+      pagination: {
+        clickable: true,
+      },
+      on: {
+        init: function (swiper) {
+          slide = this.slides.eq(0);
+          slide.addClass('ani-slide');
+          // slide.find('.up').addClass('fadeInDown'); //ani-slide
+          //   slide.find('.down').addClass('fadeInUp'); //ani-slide
+        },
+        transitionStart: function () {
+          current = 1;
+          for (i = 0; i < this.slides.length; i++) {
+            slide = this.slides.eq(i);
+            slide.removeClass('ani-slide');
+            // slide.find('.up').addClass('fadeInDown'); //ani-slide
+            // slide.find('.down').addClass('fadeInUp'); //ani-slide
+          }
+          if (this.activeIndex == 2) {
+            numbertext.html(1 + '0000+')
+          }
+        },
+        transitionEnd: function () {
+          if (this.activeIndex == 0) {
+            slide2_1.removeClass('ani-slide2')
+          }
+          if (this.activeIndex == 2) {
+            let value = 1;
+            clearInterval(timeout1)
+            timeout1 = setInterval(function () {
+              value++;
+              numbertext.html(value + '0000+')
+              if (value > 99) {
+                clearInterval(timeout1)
+              }
+
+            }, 20);
+          }
+          slide = this.slides.eq(this.activeIndex);
+          slide.addClass('ani-slide');
+        },
+      }
+
+    });
+    let swiper2 = new Swiper('.swiper-container1', {// 第二页
+      direction: 'vertical',
+      speed: 800,
+      followFinger: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      on: {
+        // init: function (swiper) {
+        //   slide = this.slides.eq(0);
+        //   slide.addClass('ani-slide2');
+        // },
+        transitionStart: function () {
+          current = 2
+          if (this.activeIndex == 1) {
+            swiper2dom.removeClass('ani-slide')
+          }
+          for (i = 0; i < this.slides.length; i++) {
+            slide = this.slides.eq(i);
+            slide.removeClass('ani-slide2');
+          }
+        },
+        transitionEnd: function () {
+          if (this.activeIndex == 0 && current == 2) {
+            swiper2dom.addClass('ani-slide')
+          }
+          slide = this.slides.eq(this.activeIndex);
+          slide.addClass('ani-slide2');
+        },
+      }
+    });
+    let swiper3 = new Swiper('.swiper-container2', {// 第3页
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      on: {
+        init: function (swiper) {
+          // slide = this.slides.eq(0);
+          // slide.addClass('ani-slide2');
+        },
+        transitionStart: function () {
+          current = 3
+          if (this.activeIndex == 1) {
+            swiper4dom.removeClass('ani-slide')
+          }
+          for (i = 0; i < this.slides.length; i++) {
+            slide = this.slides.eq(i);
+            slide.removeClass('ani-slide2');
+          }
+        },
+        transitionEnd: function () {
+          if (this.activeIndex == 0 && current == 3) {
+            swiper4dom.addClass('ani-slide')
+          }
+          slide = this.slides.eq(this.activeIndex);
+          slide.addClass('ani-slide2');
+        },
+      }
+    });
+    // let swiper4 = new Swiper('#swiper-container2', {// 第4页
+    //   direction: 'vertical',
+    //   nested: true,
+    //   slidesPerView: 'auto',
+    //   freeMode: true,
+    //   scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //   },
+    // });
+
+    $('.texttop1').on('click', function () {
+      window.location.href = './about.html';
+      $('.meng').click();
+    })
+
+    $('.texttop2').on('click', function () {
+      $('.meng').click();
+    })
+
+    // $('.meng').on('touch',function(e){
+
+    // })
+  })
+
+</script>
+
+</html>
